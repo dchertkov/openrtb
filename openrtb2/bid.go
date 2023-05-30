@@ -344,6 +344,15 @@ type Bid struct {
 	//   AdCOM 1.0 for guidance on the use of this field.
 	SlotInPod adcom1.SlotPositionInPod `json:"slotinpod,omitempty"`
 
+	// Attribute
+	//   payload
+	// Type:
+	//   string
+	// Description:
+	//   Used in Yandex https://yandex.com/dev/rtb/doc/api/video-inapp-response.html
+	//   JSON received from the DSP. Up to 1024 characters. Can be transferred in a Bid Loss Notification.
+	Payload string `json:"payload,omitempty"`
+
 	// Attribute:
 	//   ext
 	// Type:
