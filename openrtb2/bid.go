@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 
 	"github.com/prebid/openrtb/v19/adcom1"
+	"github.com/prebid/openrtb/v19/yandex"
 )
 
 // 4.3.3 Object: Bid
@@ -351,7 +352,7 @@ type Bid struct {
 	// Description:
 	//   Used in Yandex https://yandex.com/dev/rtb/doc/api/video-inapp-response.html
 	//   JSON received from the DSP. Up to 1024 characters. Can be transferred in a Bid Loss Notification.
-	Payload string `json:"payload,omitempty"`
+	Payload yandex.Payload `json:"payload,omitempty"`
 
 	// Attribute:
 	//   ext
